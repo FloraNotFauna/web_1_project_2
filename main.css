@@ -1,3 +1,13 @@
+@font-face {
+  font-family: museo-300-webfont;
+  src: url(web_1_project_2/assets/fonts/museo/museo-300-webfont.ttf
+      );
+  font-weight: normal;
+}
+h1, h2, h3, h4, h5, p, a {
+  font-family: museo-300-webfont;
+}
+
 body {
   background: url(https://github.com/FloraNotFauna/web_1_project_2/blob/master/assets/textures/fabric_plaid.png?raw=true);
   background-size: cover;
