@@ -2,13 +2,22 @@ h1, h2, h3, h4, h5, p, a {
   font-family: museo;
   color: white;
 }
+h6 {
+  font-family: museo;
+  color: grey;
+  font-size: 1.5em
+}
+.biotext {
+  color: grey;
+  font-size: 1.5em;
+}
 body {
   background: url(https://github.com/FloraNotFauna/web_1_project_2/blob/master/assets/textures/fabric_plaid.png?raw=true);
   background-size: cover;
-  width: 100%;
-  height: 2000px;
+  min-height: 1000px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin: 0 auto;
   padding: ;
 }
@@ -40,7 +49,7 @@ a {
   align-items: flex-end;
   justify-content: space-around;
 }
-#icons {
+.icons {
   min-width: 200px;
   display: flex;
   align-items: flex-end;
@@ -51,29 +60,130 @@ a {
   width: 40px;
   padding: 0 10px;
 }
+#selfie {
+  min-width: 200px;
+  max-height: 430px;
+  background: url(https://github.com/FloraNotFauna/web_1_project_2/blob/master/assets/_20181231_154054.jpg?raw=true);
+  background-size: contain;
+}
+#contain {
+  padding: 0 20px 0 0;
+}
 header {
   display: flex;
   justify-content: center;
-  min-height: 450px;
-  max-height: 
+  max-height: 1000px;
+  min-height: 600px;
+}
+#student-feature {
+	display: grid;
+	grid-template-columns: repeat(3, 1.5fr) 2fr;
+	grid-template-rows: repeat(3, 1fr); 
+	grid-gap:20px;
+  width: 97vw;
 }
 #whitebox {
   background-color: white;
-  width: 95%;
-  height: 500px;
+  min-height: 200px;
+  max-height: 650px;
+  min-width: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+	grid-column-start: 1 ;
+	grid-column-end: 4;
+	grid-row-start: 1; 
+	grid-row-end: 3;
+}
+#position-one {
+	background: url('https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2019/02/Dogs-Personalities-Change-Over-Time-to-Mimic-Their-Owners-New-Study-Says.jpg?crop=109px%2C113px%2C1821px%2C955px&resize=1200%2C630&ssl=1');
+	background-position: center;
+	background-size: cover;
+	grid-column-start: 1 ;
+	grid-column-end: 2;
+	grid-row-start: 3; 
+	grid-row-end: 4;
+  border: 5pt solid white;
+}
+#position-two {
+	background: url('http://akc.org/wp-content/uploads/2015/09/Siberian-Husky-Two-Puppies.jpg');
+	background-position: center;
+	background-size: cover;
+	grid-column-start: 2 ;
+	grid-column-end: 2;
+	grid-row-start: 3; 
+	grid-row-end: 4;
+  border: 5pt solid white;
+}
+#position-three {
+	background: url('https://www.rd.com/wp-content/uploads/2017/05/001-congrats-Critical-Things-to-Know-Before-Adopting-a-Rescue-Dogk_474506101-Lunja-380x254.jpg');
+	background-position: center;
+	background-size: cover;
+	grid-column-start:  ;
+	grid-column-end: 4;
+	grid-row-start: 3; 
+	grid-row-end: 4;
+  border: 5pt solid white;
+}
+#position-one img {
+	object-fit: cover; 
+  height: 20vh;}
+#position-two img {
+	object-fit: cover; 
+  height: 20vh;}
+#position-three img {
+	object-fit: cover; 
+  height: 20vh;}
+#profile {
+  background-color: white;
+	grid-column-start: 4 ;
+	grid-column-end: 5;
+	grid-row-start: 1; 
+	grid-row-end: 1.7;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+#bio {
+  background-color: white;
+  grid-column-start: 4 ;
+	grid-column-end: 5;
+	grid-row-start: 2; 
+	grid-row-end: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 40px;
+}
+#ups{
+  display: flex;
+  justify-content:space-between;
+  align-items: space-between;
+  width: 800px;
+  
+}
+.imgcontain {
+  background-color: white;
+  width: 100px;
+  height: 100px;
+}
+#smallwhitebox1{
+  width: 30%;
+  max-height: 780px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 #slider {
   width: 97%;
-  height: 400px;
+  min-height: 480px;
+  max-height: 610px;
   background: url(https://static1.squarespace.com/static/5af1bd791aef1d143f85e67e/t/5af214df1ae6cfd5efc498e4/1525814499920/homeimage03.jpg?format=1500w);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  position: relative;
 }
 .arrow {
   width: 50px;
@@ -81,10 +191,10 @@ header {
   position: absolute;
 }
 #rarrow {
- right: 30px;
+ right: 0;
 }
 #larrow {
-  left: 30px;
+  left: 0;
 }
 #caption {
   width: 97%;
@@ -109,20 +219,26 @@ header {
   padding: 10px 0 0 0;
   z-index: -1;
 }
+#title {
+  padding: 40px 0 0 40px;
+
+}
+#smallwhitebox1 {
+  
+}
 #grid {
   width: 95%;
   max-height: 2000px;
-  min-height:800px;
+  min-height:400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 20px 0 50px 0;
 }
 .gridrow {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  
+  display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
 }
 h2 {
   color: grey;
@@ -130,18 +246,19 @@ h2 {
   font-size: 2em;
 }
 .recentpost {
-  width: 20%;
-  min-height: 200px;
-  max-height: 300px;
-  background-color: black;
+  width: 90%;
+  min-height: 190px;
+  max-height: 400px;
 }
 #button {
   background-color: grey;
-  width: 200px;
+  min-width: 200px;
+  max-height: 500px;
   min-height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url(https://github.com/FloraNotFauna/web_1_project_2/blob/master/assets/textures/honey_im_subtle.png?raw=true);
 }
 #copynav {
   display: flex;
@@ -153,7 +270,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 600px 0 0 0;
+  padding: 80px 0 0 0;
   
 }
 #twitter {
@@ -172,22 +289,29 @@ h2 {
   height: 30px;
 }
 footer {
-  width: 100%;
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
-  padding:  20px 20px 0 10px;
    background: url(https://github.com/FloraNotFauna/web_1_project_2/blob/master/assets/textures/honey_im_subtle.png?raw=true);
+  padding: 40px 0 0 40px;
+  position: relative;
 }
 #getready{
   padding: 10px;
 }
 #bottomleft {
   height: 300px;
-  width: 400px;
+  width: 450px;
   background: url();
   display: flex;
   flex-direction: column;
+  position: absolute;
+  left: 80px;
+}
+#bottomleft a{
+  font-size: 13px;
+}
+#bottomright h5{
+ font-size: 20px 
 }
 h3, h4 {
   color: white;
@@ -195,7 +319,7 @@ h3, h4 {
 }
 #searchbar {
   background-color: white;
-  width: 33%;
+  width: 36%;
   height: 40px;
   display: flex;
   align-items: center;
@@ -221,25 +345,25 @@ h3, h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 400px;
+  width: 450px;
   height:200px;
 }
 .gridrowtwo {
   display: flex;
   justify-content: space-between;
-  width: 500px;
+  width: 450px;
 }
 #bottommid {
-  width: 400px;
+  width: 550px;
   display: flex;
   flex-direction: column;
   height: 300px;
-  
+  position: absolute;
+  right: 30px;
 }
 #bottomright {
-  width: 400px;
+  width: 550px;
   height: 300px;
-  
   display: flex;
   flex-direction: column;
 }
