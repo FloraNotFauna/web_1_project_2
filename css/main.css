@@ -138,11 +138,13 @@ h2 {
 }
 #button {
   background-color: grey;
-  width: 200px;
+  min-width: 200px;
+  max-height: 500px;
   min-height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url(https://github.com/FloraNotFauna/web_1_project_2/blob/master/assets/textures/honey_im_subtle.png?raw=true);
 }
 #copynav {
   display: flex;
