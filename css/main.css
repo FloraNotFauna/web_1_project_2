@@ -173,12 +173,11 @@ h2 {
   height: 30px;
 }
 footer {
-  width: 100%;
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
-  padding:  20px 20px 0 10px;
    background: url(https://github.com/FloraNotFauna/web_1_project_2/blob/master/assets/textures/honey_im_subtle.png?raw=true);
+  padding: 40px 0 0 40px;
+  position: relative;
 }
 #getready{
   padding: 10px;
