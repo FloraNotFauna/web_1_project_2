@@ -186,10 +186,12 @@ footer {
 }
 #bottomleft {
   height: 300px;
-  width: 400px;
+  width: 450px;
   background: url();
   display: flex;
   flex-direction: column;
+  position: absolute;
+  left: 80px;
 }
 h3, h4 {
   color: white;
@@ -232,16 +234,16 @@ h3, h4 {
   width: 500px;
 }
 #bottommid {
-  width: 400px;
+  width: 550px;
   display: flex;
   flex-direction: column;
   height: 300px;
-  
+  position: absolute;
+  right: 30px;
 }
 #bottomright {
-  width: 400px;
+  width: 550px;
   height: 300px;
-  
   display: flex;
   flex-direction: column;
 }
